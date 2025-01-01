@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body header .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 1140px;
+  min-height: 80px;
+}
+body header .head img {
+  width: 64px;
+  height: 32px;
+}
+body header .head .nav {
+  display: flex;
+}
+body header .head .nav a {
+  text-transform: capitalize;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+body header .head .nav a:hover {
+  color: darkorange;
+}
+body header .head .nav .active {
+  color: blue;
+}
+body main {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("./bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 72px 0px;
+}
+body main .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1140px;
+  margin: auto;
+}
+body main .content h1 {
+  text-align: center;
+  font-size: 72px;
+  color: white;
+  margin: 60px auto 0;
+  font-family: Cambay;
+}
+body main .content p {
+  width: 760px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  word-break: break-word;
+  margin: 30px auto 0;
+  font-family: "Open Sans", sans-serif;
+}
+body main .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 30px auto 10px;
+}
+body main .buttons .about {
+  background-color: white;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  border-style: solid;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 29px;
+  font-size: 1.125rem;
+  padding: 14px 45px 15px 44px;
+  border-width: 1px;
+  border-radius: 50px;
+  border-color: white;
+  text-transform: capitalize;
+}
+body main .buttons .about:hover {
+  background-color: orange;
+  color: white;
+  border-color: orange;
+}
+body main .buttons .work {
+  background-color: transparent;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  border-style: solid;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 29px;
+  font-size: 1.125rem;
+  padding: 14px 45px 15px 44px;
+  border-width: 1px;
+  border-radius: 50px;
+  border-color: white;
+  text-transform: capitalize;
+}
+body main .buttons .work:hover {
+  background-color: white;
+  color: black;
+  border-color: white;
+}
+body main .cards {
+  display: grid;
+  grid-template-columns: repeat(4, calc(25% - 22.5px));
+  gap: 30px;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  min-height: 220px;
+}
+body main .cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: white;
+  border-radius: 27px;
+}
+body main .cards .card img {
+  width: 60px;
+  height: 60px;
+}
+body main .cards .card span {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 20px auto 0;
+}
+body footer {
+  height: 200px;
+  padding: 48px 0px;
+  background: #333333;
+  color: white;
+}
+body footer p {
+  width: 417px;
+  text-align: center;
+  margin: auto;
+  font-size: 14px;
+}/*# sourceMappingURL=style.css.map */
