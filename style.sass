@@ -33,7 +33,8 @@ body
             margin: auto
             width: 1140px
             min-height: 80px
-
+            .menu
+                display: none
             img
                 width: 64px
                 height: 32px
@@ -130,3 +131,82 @@ body
             text-align: center
             margin: auto
             font-size: 14px
+
+@media screen and (max-width:576px )
+    body
+        header
+            .head
+                width: 420px
+                .menu
+                    display: block
+                .nav
+                    display: none
+        main
+            padding: 48px 0px
+            .buttons
+                flex-direction: column
+                margin: 30px 10px
+            .content
+                width: 420px
+
+                h1
+                    font-size: 36px
+                    margin: 0px auto 0px
+                p
+                    width: 420px
+                    margin: 15px auto 0px
+
+                .cards
+                    grid-template-columns: repeat(1, calc(100% - 30px ))
+                    grid-template-rows: 1fr
+
+@media screen and (min-width:576px ) and (max-width: 767px)
+    body
+        header
+            .head
+                width: 520px
+                .menu
+                    display: block
+                .nav
+                    display: none
+        main
+            .content
+                width: 520px
+                p
+                    width: 520px
+                .cards
+                    grid-template-columns: repeat(2, calc(50% - 30px ))
+                    grid-template-rows: 1fr 1fr
+
+@media screen and ( min-width:767px ) and (max-width: 991px)
+    body
+        header
+            .head
+                width: 720px
+                .menu
+                    display: block
+                .nav
+                    display: none
+        main
+            .content
+                width: 720px
+
+                p
+                    width: 720px
+
+                .cards
+                    grid-template-columns: repeat(2, calc(50% - 30px ))
+                    grid-template-rows: 1fr 1fr
+
+@media screen and (min-width: 991px) and ( max-width: 1200px)
+    body
+        header
+            .head
+                width: 920px
+                .menu
+                    display: block
+                .nav
+                    display: none
+        main
+            .content
+                width: 920px
